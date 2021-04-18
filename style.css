@@ -59,3 +59,18 @@ footer ul {
     margin-left: 0;
     padding-left: 0;
 }
+
+svg{
+    text-align: center;
+}
+
+a{
+	color: #000;
+}
+
+.active {
+
+    background-color: #c0effa;
+    text-shadow: 0 0 10px #c0effa;
+    transition: all 0.15s;
+}
