@@ -6,14 +6,21 @@
             ?>
 
             <svg
-                    class = "mysvg"
-                    viewBox="0 0 350 300">
+                    id = "svg_main"
+                    class = "svg"
+                    viewBox="0 0 350 300"
+                    preserveAspectRatio="xMidYMin meet"
+                    >
 
-                <g
-                        transform="translate(0.39902927,1.197089)"
-                        id="layer3">
-
-                    <a href="#reg1" class="map-region"  data-color="#63edff" >
+                <g>
+                    <a href="#reg0" class="map-region"  data-color="#63edff">
+                        <path
+                                style=<?=$style?>
+                                d="m 511.86147,402.12626 c -5.94866,4.04244 -6.62396,14.47023 -15.47712,15.02233 -7.04572,1.30716 -19.19099,2.61931 -18.351,12.4414 1.41936,4.26419 3.37427,10.31353 -2.04242,12.70369 -4.23189,3.99655 -14.89731,4.66306 -14.22991,12.07031 3.46922,8.93121 12.44013,14.95621 20.18416,19.8019 13.01799,-6.97032 23.60663,-18.61312 37.55859,-23.61329 6.00707,0.23584 15.83445,1.52203 18.59375,-5.17299 -2.85526,-11.16124 -15.71336,-16.81098 -18.83929,-28.17801 -2.48942,-4.38333 -2.62279,-12.70606 -7.39676,-15.07534 z"
+                                id="path171"
+                                transform="scale(0.26458333)" />
+                    </a>
+                    <a href="#reg1" class="map-region"  title = "Болховский район" data-color="#63edff" >
                         <path
                                 style=<?=$style?>
                                 d="m 460.8012,1.3254831 c -13.55291,4.6259135 -22.28743,17.6162339 -33.56415,25.8940939 -7.75541,6.138364 -17.20508,12.492265 -17.38666,23.537752 -2.10209,9.041609 -4.92205,23.877455 -16.96771,23.729426 -16.34393,-1.554046 -28.47845,-19.502588 -45.80358,-15.574776 -6.28452,1.573758 -8.89974,11.093932 -1.95033,13.710938 6.1158,2.779911 14.01908,4.205787 15.9194,11.844644 2.72686,5.49835 8.42973,15.365343 0.0783,18.915299 -6.42797,3.9394 6.48118,8.8191 8.57357,13.47663 6.72724,6.77506 9.31411,19.47377 20.81933,19.74501 7.41242,-0.75634 9.74485,2.07242 5.8015,8.9685 -2.09899,9.32727 -5.90807,20.48188 -1.06935,29.469 5.22301,6.18814 15.24404,3.21644 20.61105,8.44308 1.0108,6.82702 -9.22091,13.30847 -2.56697,19.601 3.45733,8.4751 -6.83571,15.21497 -8.10826,23.22266 -2.98399,7.02399 4.47236,11.72606 10.63616,11.75503 11.37861,3.023 21.25058,10.56088 32.20082,13.99464 10.97341,1.01742 24.98646,-4.55804 33.50562,5.04942 6.57416,5.99828 16.23401,11.4233 24.9353,6.27681 9.47764,-3.5862 17.07796,-12.51353 16.38114,-23.00224 2.06853,-9.52169 14.02834,-8.70506 21.13003,-11.68806 7.84789,-6.04569 16.46537,-14.74353 15.26786,-25.41016 6.27791,-22.87091 8.48275,-47.15227 16.8722,-69.43079 2.9888,-4.47922 5.8513,-10.71318 11.19141,-12.38003 12.16599,3.32956 25.5174,14.59239 38.12779,6.44811 8.2952,-2.28434 7.19757,-6.98636 1.024,-11.16909 -8.96505,-7.38687 -19.01979,-14.80251 -21.66853,-26.858258 -4.18392,-9.506431 -3.76506,-20.042844 -6.9336,-29.648438 -4.50439,-6.948975 -14.60019,-3.290119 -21.46763,-3.886719 -11.30839,0.88427 -22.00964,11.296819 -33.51841,4.743304 -10.87875,-4.010672 -18.37129,-15.00439 -29.74052,-17.33817 -4.1054,0.805453 -8.16903,1.864726 -12.29631,2.589286 2.83445,-11.343561 5.17177,-27.763404 -7.91575,-33.716518 C 482.88929,8.0460196 471.69489,6.5037871 461.881,1.3757064 c -0.35696,-0.05383 -0.71943,-0.070507 -1.0798,-0.050223 z"
@@ -28,8 +35,9 @@
                                 style=<?=$style?>
                                 d="m 941.87542,452.81265 c -3.75358,3.54383 -0.16174,11.14094 -0.69073,15.7926 -0.2362,9.10068 5.83567,20.33758 -3.89759,26.1919 -4.44914,3.44992 -8.10855,10.89057 -14.18958,11.09028 -6.60726,-3.05257 -13.6485,-4.89848 -20.46596,-7.26284 -4.73976,-1.68234 -8.93569,-11.48481 -14.07087,-5.74219 -5.1905,4.76556 -17.47557,3.95716 -17.66741,12.79018 0.66251,9.69607 0.0316,20.47198 -4.36942,29.20759 -6.60564,3.84025 -16.94723,-5.10556 -21.9336,3.28962 -6.3558,10.90521 -1.57225,26.93802 -11.99218,35.50223 -5.92882,3.53877 -16.18856,6.31942 -13.76395,15.44643 3.54127,12.7427 11.71218,23.82218 18.0943,35.12556 9.51708,0.78663 23.26665,0.2074 25.58873,-11.54856 3.34438,-8.36697 0.15589,-18.85375 5.27902,-26.34206 8.20956,0.3252 12.92877,9.73446 18.3532,14.98269 10.19294,12.27322 20.86662,26.30282 19.61834,43.22602 -2.00064,16.5308 9.39163,29.55684 18.56306,41.81918 8.81847,14.23249 2.03657,33.29423 12.68694,46.99499 5.70445,7.49048 7.42237,18.03036 14.55636,24.26897 9.10474,3.25643 18.97172,5.27109 26.10491,12.3856 9.65985,3.75081 20.87464,2.53797 31.02401,1.48996 7.5658,-2.1006 1.5218,-11.07987 -0.1256,-15.38505 -2.5778,-8.31097 -10.73133,-16.79918 -7.7511,-25.82031 3.7699,-8.60386 14.535,-2.87246 21.351,-3.298 6.4271,1.17494 18.9489,2.30131 19.0117,-7.20423 -2.9877,-12.1119 -19.5581,-18.40858 -16.8192,-32.41071 2.0182,-13.69713 18.7811,-14.67696 28.7641,-19.82243 5.4273,-3.47232 14.2362,-5.55807 16.5122,-12.05257 -2.3008,-10.32632 -15.3184,-6.62566 -22.7484,-8.52679 -8.8219,-0.0757 -5.4234,-12.41016 -11.4174,-16.54018 -6.3049,-7.18689 -19.9757,-8.95125 -19.601,-20.5971 -1.0592,-9.17678 -9.8543,-18.53273 -3.3817,-27.43862 8.0346,0.16572 16.6435,1.93896 24.3471,1.17467 0.089,-9.626 -2.8441,-19.31251 -5.6947,-28.2115 -8.8118,-1.29968 -19.6796,2.57213 -27.4386,-2.80971 -12.03268,-14.61515 -23.61873,-29.74658 -34.45874,-45.21763 -2.01899,-3.1744 -0.23834,-7.75841 3.98994,-6.50391 2.48252,-0.11863 11.69462,1.36006 8.45146,-3.56863 -5.43026,-6.82526 -17.88982,-4.26665 -20.23159,-14.27177 -2.85788,-7.6564 -2.42483,-16.21859 -3.90346,-24.12667 -5.14493,-2.08149 -10.09112,-5.34156 -15.68359,-6.07701 z"
                                 id="path2"
-                                transform="scale(0.26458333)" />
-                    </a>
+                                transform="scale(0.26458333)"
+                                />
+                                                    </a>
                     <a href="#reg3" class="map-region"  data-color="#63edff">
                         <path
                                 style=<?=$style?>
@@ -148,13 +156,7 @@
                                 transform="scale(0.26458333)" />
 
                     </a>
-                    <a href="#reg0" class="map-region"  data-color="#63edff">
-                        <path
-                                style=<?=$style?>
-                                d="m 511.86147,402.12626 c -5.94866,4.04244 -6.62396,14.47023 -15.47712,15.02233 -7.04572,1.30716 -19.19099,2.61931 -18.351,12.4414 1.41936,4.26419 3.37427,10.31353 -2.04242,12.70369 -4.23189,3.99655 -14.89731,4.66306 -14.22991,12.07031 3.46922,8.93121 12.44013,14.95621 20.18416,19.8019 13.01799,-6.97032 23.60663,-18.61312 37.55859,-23.61329 6.00707,0.23584 15.83445,1.52203 18.59375,-5.17299 -2.85526,-11.16124 -15.71336,-16.81098 -18.83929,-28.17801 -2.48942,-4.38333 -2.62279,-12.70606 -7.39676,-15.07534 z"
-                                id="path171"
-                                transform="scale(0.26458333)" />
-                    </a>
+                    
                     <a href="#reg18" class="map-region"  data-color="#63edff">
                         <path
                                 style=<?=$style?>
@@ -205,254 +207,6 @@
                                 transform="scale(0.26458333)" />
                     </a>
                 </g>
-                <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="titles"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       id="text1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150);"
-       x="25.991529"
-       y="0"
-       transform="matrix(0.81003375,0,0,1.9754208,41.193256,-8.4560832)"><tspan
-         x="104.81741"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Болховский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.73392975,0,0,1.7433214,149.14489,117.00529)"><tspan
-         x="106.7974"
-         y="22.139762"><tspan>Верховский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text3"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6-4);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.62514826,0,0,1.5111514,60.033831,171.77033)"><tspan
-         x="107.38952"
-         y="22.139762"><tspan>Глазуновский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text4"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6-4-2);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.81797934,0,0,1.6040194,-75.058951,158.02781)"><tspan
-         x="117.29304"
-         y="22.139762"><tspan>Дмитровский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text5"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6-4-2-9);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.81797934,0,0,1.6040194,157.07485,233.24506)"><tspan
-         x="118.96115"
-         y="22.139762"><tspan>Должанский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text6"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6-4-2-9-0);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.69942428,0,0,1.8044107,88.760805,90.11783)"><tspan
-         x="112.09232"
-         y="22.139762"><tspan>Залегощенский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text7"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6-4-2-9-0-4);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.69942428,0,0,1.8044107,-16.625616,13.239469)"><tspan
-         x="119.9182"
-         y="22.139762"><tspan>Знаменский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text8"
-       style="font-size:8.46667px;line-height:0px;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-6-4-2-9-0-4-7);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.86060283,0,0,2.0922839,101.17969,197.07917)"><tspan
-         x="117.17108"
-         y="22.139762"><tspan>Колпнянский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-3);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.69765955,0,0,2.1831786,191.23519,36.189076)"><tspan
-         x="105.26471"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Корсаковский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text10"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.55721191,0,0,1.5074501,233.08941,125.24362)"><tspan
-         x="111.67689"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Краснозоренский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text11"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.87578798,0,0,1.7882325,-18.001168,130.95175)"><tspan
-         x="128.88291"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Кромской</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text12"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6);"
-       x="22.991529"
-       y="0"
-       transform="matrix(1.0227863,0,0,1.8464406,150.52111,182.57459)"><tspan
-         x="126.29452"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Ливенский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text13"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.50673712,0,0,1.2380786,125.64613,190.72749)"><tspan
-         x="106.21503"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Малоархангельский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text14"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.85293555,0,0,1.8944429,69.941937,30.314908)"><tspan
-         x="128.31887"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Мценский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text15"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.56104278,0,0,1.6136604,225.48228,88.471919)"><tspan
-         x="108.01922"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Новодеревеньковский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text16"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.69329706,0,0,1.787735,145.10294,70.810415)"><tspan
-         x="125.92258"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Новосильский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text17"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-6);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.82199092,0,0,1.7029801,19.7105375,59.159427)"><tspan
-         x="133.03552"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Орловский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text18"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.88848441,0,0,1.6941408,95.175185,150.08419)"><tspan
-         x="130.75683"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Покровский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text19"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.74034652,0,0,1.5537496,59.202528,137.85591)"><tspan
-         x="125.79747"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Свердловский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text20"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8-7);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.54182733,0,0,1.3216502,-13.141341,129.41253)"><tspan
-         x="131.35368"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Сосковский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text21"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8-7-2);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.68563027,0,0,1.4620414,11.58945,185.49217)"><tspan
-         x="128.74273"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Троснянский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text22"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8-7-2-2);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.73792507,0,0,1.5556356,-15.623247,80.744219)"><tspan
-         x="138.25947"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Урицкий</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text23"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8-7-2-2-0);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.64371628,0,0,1.505146,-26.88387,49.032671)"><tspan
-         x="130.12307"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Хотынецкий</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text24"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8-7-2-2-0-4);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.71340314,0,0,1.9670179,-55.500927,88.652386)"><tspan
-         x="123.38752"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle">Шаблыкинский</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text0"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.40098px;line-height:0px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150-9-8-6-8-7-3-4-7-8-7-2-2-0-4-1);"
-       x="22.991529"
-       y="0"
-       transform="matrix(0.79402455,0,0,1.2039252,24.24577,85.167958)"><tspan
-         x="144.44329"
-         y="22.120887"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.40098px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Орел</tspan></tspan></text>
-  </g>
+
             </svg>
 
